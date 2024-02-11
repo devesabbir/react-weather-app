@@ -1,10 +1,16 @@
+import HomePage from "./pages/HomePage";
+import bgImage from "./assets/body-bg.png";
+
 function App() {
   return (
-    <>
-      <div className="h-[100vh] flex justify-center items-center">
-        <p className="text-center text-3xl text-red-600">Project</p>
-      </div>
-    </>
+    <div
+      style={{
+        backgroundImage: `url(${bgImage})`,
+      }}
+      className={`bg-body font-[Roboto] text-light bg-no-repeat bg-cover h-screen grid place-items-center`}
+    >
+      <HomePage />
+    </div>
   );
 }
 
