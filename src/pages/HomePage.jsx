@@ -1,16 +1,18 @@
 import Navbar from "../components/Header/Navbar";
 import WeatherBoard from "../components/weather/WeatherBoard";
-import { WeatherProvider } from "../providers";
+import { FavouriteProvider, WeatherProvider } from "../providers";
 
 export default function HomePage() {
   return (
     <WeatherProvider>
-      <Navbar />
-      <main>
-        <section>
-          <WeatherBoard />
-        </section>
-      </main>
+      <FavouriteProvider>
+        <Navbar />
+        <main>
+          <section>
+            <WeatherBoard />
+          </section>
+        </main>
+      </FavouriteProvider>
     </WeatherProvider>
   );
 }

@@ -34,7 +34,7 @@ export default function WeatherCondition() {
         <li className="text-sm lg:text-lg flex items-center justify-between space-x-4">
           <span>Temp min</span>
           <div className="inline-flex space-x-4">
-            <p>{Math.round(minTempreture)}°</p>
+            <p>{Math.floor(minTempreture)}°</p>
             <img src={tempMinIcon} alt="temp-min" />
           </div>
         </li>
