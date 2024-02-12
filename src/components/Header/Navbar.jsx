@@ -6,7 +6,7 @@ import favouriteIcon from "../../assets/heart.svg";
 import { useState } from "react";
 
 export default function Navbar() {
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
 
   const handleFavourites = () => {
     setModal(!modal);
